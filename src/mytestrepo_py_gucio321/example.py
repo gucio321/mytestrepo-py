@@ -1,4 +1,4 @@
-def sum(a : int, b = 0 : int) -> int:
+def sum(a : int, b : int = 0) -> int:
     """
     sum returns a sum of 2 integer numbers.
 
