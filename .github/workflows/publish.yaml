@@ -1,6 +1,6 @@
 on:
-  tag:
-    types: [created]
+  push:
+    tag:
 
 jobs:
   pypi-publish:
