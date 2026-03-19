@@ -1,3 +1,4 @@
+name: "Publish on test.PyPi.org"
 on:
   push:
     tag:
