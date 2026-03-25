@@ -24,6 +24,7 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v7
       with:
         commit_message: "Sync the project version with GitHub tags"
+        branch: master
 
 
   pypi-publish:
