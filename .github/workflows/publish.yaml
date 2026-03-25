@@ -2,12 +2,14 @@ name: "Publish on test.PyPi.org"
 on:
   push:
     tag:
+      - v*
 
 jobs:
   sync-versions:
     name: Sync versions
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v6
     - name: Extract version from tag
       id: version
       run: |
