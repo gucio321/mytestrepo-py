@@ -20,6 +20,11 @@ jobs:
       run: |
         pip install poetry
         poetry version ${{ steps.version.outputs.version }}
+    - name: Commit and push the changed version
+      uses: stefanzweifel/git-auto-commit-action@v7
+      with:
+        commit_message: "Sync the project version with GitHub tags"
+
 
   pypi-publish:
     name: Upload release to PyPI
