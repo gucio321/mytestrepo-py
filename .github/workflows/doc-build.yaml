@@ -42,23 +42,25 @@ jobs:
       run: |
         sudo apt -y install inkscape
     - name: install python3 dependencies
+      working-directory: doc
       run: |
         python3 -m pip install -r requirements.txt
     - name: install latex dependencies
       run: |
         sudo apt install -y latexmk texlive texlive-fonts-extra texlive-full
     - name: build PDF
+      working-directory: doc
       run: make latexpdf
     - name: do some trick ;-)
       shell: bash
       run: |
-        stat '_build/latex/matematyka.pdf'
-        mv '_build/latex/matematyka.pdf' ..
+        stat 'docs/_build/latex/mytestrepo-py.pdf'
+        mv 'docs/_build/latex/mytestrepo-py.pdf' ..
         rm -rf *
         git add .
         git config user.name gucio321
         git config user.email gucio321@protonmail.com
-        mv ../matematyka.pdf .
+        mv ../mytestrepo-py.pdf .
         git add .
         git commit --amend --no-edit
     - name: Push changes
