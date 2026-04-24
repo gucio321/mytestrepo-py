@@ -43,4 +43,5 @@ def test_sum_exceptions():
     """
     check if VlueError is raised when trying to sum string with an integer
     """
-    with 
+    with pytest.raises(TypeError):
+        sum("something", 5)
