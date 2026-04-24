@@ -20,4 +20,4 @@ jobs:
       - name: Install dependencies
         run: pip install pytest pytest-md pytest-emoji
       - name: Run tests
-        run: pytest -v --emoji --md
+        run: pytest -v --emoji
