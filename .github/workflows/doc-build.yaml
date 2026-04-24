@@ -42,14 +42,14 @@ jobs:
       run: |
         sudo apt -y install inkscape
     - name: install python3 dependencies
-      working-directory: doc
+      working-directory: ./docs
       run: |
         python3 -m pip install -r requirements.txt
     - name: install latex dependencies
       run: |
         sudo apt install -y latexmk texlive texlive-fonts-extra texlive-full
     - name: build PDF
-      working-directory: doc
+      working-directory: ./docs
       run: make latexpdf
     - name: do some trick ;-)
       shell: bash
