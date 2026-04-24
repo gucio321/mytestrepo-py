@@ -1,7 +1,7 @@
 from .example import *
 import pytest
 
-def test_sum():
+def test_sum_numbers():
     test_cases = [
             {
                 "Name": "two positive integers",
@@ -36,14 +36,14 @@ def test_sum():
     ]
 
     for tc in test_cases:
-        assert sum(tc["A"], tc["B"]) == tc["expected"], f"Failed {tc['Name']}"
+        assert sum_numbers(tc["A"], tc["B"]) == tc["expected"], f"Failed {tc['Name']}"
 
 
-def test_sum_exceptions():
+def test_sum_numbers_exceptions():
     """
     check if VlueError is raised when trying to sum string with an integer (or multiple strings)
     """
     with pytest.raises(AssertionError):
-        sum("something", 5)
-        sum("something", "else")
-        sum("s", 4.4)
+        sum_numbers("something", 5)
+        sum_numbers("something", "else")
+        sum_numbers("s", 4.4)
