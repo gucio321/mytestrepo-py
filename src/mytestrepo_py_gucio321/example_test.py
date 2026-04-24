@@ -41,7 +41,9 @@ def test_sum():
 
 def test_sum_exceptions():
     """
-    check if VlueError is raised when trying to sum string with an integer
+    check if VlueError is raised when trying to sum string with an integer (or multiple strings)
     """
-    with pytest.raises(TypeError):
+    with pytest.raises(AssertionError):
         sum("something", 5)
+        sum("something", "else")
+        sum("s", 4.4)
