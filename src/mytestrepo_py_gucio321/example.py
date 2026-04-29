@@ -1,3 +1,6 @@
+from numba import jit
+
+@jit
 def sum_numbers(a : [int, float], b : [int, float] = 0) -> [int, float]:
     """
     sum returns a sum of 2 integer numbers.
