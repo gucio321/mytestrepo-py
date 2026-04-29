@@ -4,7 +4,7 @@ build-backend = "uv_build"
 
 [project]
 name = "mytestrepo_py_gucio321"
-version = "0.0.9"
+version = "1.0.0"
 authors = [
   { name="M. Sz.", email="gucio321@protonmail.com" },
 ]
