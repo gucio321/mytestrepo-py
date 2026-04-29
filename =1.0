@@ -51,7 +51,7 @@ Downloading beautifulsoup4-4.14.3-py3-none-any.whl (107 kB)
 Downloading mailbits-0.2.3-py3-none-any.whl (11 kB)
 Downloading pydantic-2.13.3-py3-none-any.whl (471 kB)
 Downloading pydantic_core-2.46.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 181.6 MB/s  0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 66.2 MB/s  0:00:00
 Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
 Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
 Downloading soupsieve-2.8.3-py3-none-any.whl (37 kB)
